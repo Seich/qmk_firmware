@@ -3,6 +3,7 @@
 #include QMK_KEYBOARD_H
 
 #define ___ KC_TRNS
+#define XXX KC_NO
 
 // Layers
 #define _BASE 0
@@ -20,13 +21,13 @@ const uint16_t keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
             KC_TAB,     KC_Q,   KC_W,   KC_E,   KC_R,   KC_T,  KC_Y,    KC_U,   KC_I,   KC_O,   KC_P,   KC_LBRC,   KC_RBRC,       KC_BSPC,     KC_DEL,  \
      // |-----------------------------------------------------------------------------------------------------------------------------------------------|
      // |CapsLo      |  A    |  S    |  D    |  F    |  G    |  H    |  J    |  K    |  L    |  ;    |  '        |     ~   |      Enter      |  PgU     |
-          MO(_FUN2),   KC_A,   KC_S,   KC_D,   KC_F,   KC_G,   KC_H,   KC_J,   KC_K,   KC_L,  KC_SCLN,  KC_QUOT,     ___,      KC_ENT,       KC_PGUP,   \
+          MO(_FUN2),   KC_A,   KC_S,   KC_D,   KC_F,   KC_G,   KC_H,   KC_J,   KC_K,   KC_L,  KC_SCLN,  KC_QUOT,     XXX,      KC_ENT,       KC_PGUP,   \
      // |-----------------------------------------------------------------------------------------------------------------------------------------------|
      // |Shift        |   \    |  Z    |  X    |  C    |  V    |  B    |  N    |  M    |    ,     |    .    |    /    |    Shift      |   Up   |   PgD  |
-           KC_LSFT,      ___,    KC_Z,   KC_X,   KC_C,   KC_V,   KC_B,   KC_N,   KC_M,   KC_COMM,   KC_DOT,   KC_SLSH,    KC_RSFT,    KC_UP,   KC_PGDN,\
+           KC_LSFT,      XXX,    KC_Z,   KC_X,   KC_C,   KC_V,   KC_B,   KC_N,   KC_M,   KC_COMM,   KC_DOT,   KC_SLSH,    KC_RSFT,    KC_UP,   KC_PGDN,\
      // |-----------------------------------------------------------------------------------------------------------------------------------------------|
      // |   Ctrl   |   Gui   |   Alt     |                   Space                     |    Alt   |     FN1    |  ctrl   |     Left   |   Dow   |  Rig  |
-           KC_LCTL,  KC_LGUI,   KC_LALT,                     KC_SPC,                     KC_RALT,   MO(_FUN1),   ___,    KC_LEFT,     KC_DOWN,  KC_RIGHT
+           KC_LCTL,  KC_LGUI,   KC_LALT,                     KC_SPC,                     KC_RALT,   MO(_FUN1),   XXX,    KC_LEFT,     KC_DOWN,  KC_RIGHT
      // `-----------------------------------------------------------------------------------------------------------------------------------------------'
     ),
 
